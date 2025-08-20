@@ -26,12 +26,10 @@ jobs:
           BHAGAVAD_GITA_API_KEY: ${{ secrets.BHAGAVAD_GITA_API_KEY }}
           BHAGAVAD_GITA_API_HOST: ${{ secrets.BHAGAVAD_GITA_API_HOST }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
           FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
           TO_EMAIL: ${{ secrets.TO_EMAIL }}
           SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          EMAIL_SUBJECT: ${{ secrets.EMAIL_SUBJECT }}
         run: python agent.py
