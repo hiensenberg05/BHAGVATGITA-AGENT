@@ -16,7 +16,7 @@ EMAIL_PASS = os.getenv("EMAIL_PASS")
 FROM_EMAIL = os.getenv("FROM_EMAIL")
 TO_EMAIL = os.getenv("TO_EMAIL")
 SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
-SMTP_PORT = int(os.getenv("SMTP_PORT", 465))
+SMTP_PORT = int(os.getenv("SMTP_PORT") or 465)
 EMAIL_SUBJECT = os.getenv("EMAIL_SUBJECT", "🌞 Your Daily Gita Shloka")
 
 # Configure Google LLM
